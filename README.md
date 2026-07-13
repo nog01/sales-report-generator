@@ -83,6 +83,53 @@ automatically — you don't need to do anything else.
 4. Click **Export to Excel** or **Export to PDF**, then use the
    **Download** button that appears to save the file.
 
+## What It Actually Prints (Default Filters, Real Run)
+
+Here's a real run of the app with the default filters (last 180 days, all
+cities, all categories) against the sample data included in `company.db`.
+Since the sample data uses random quantities/dates and is relative to
+"today," your own numbers will differ slightly — but the shape of the
+output will look like this.
+
+**KPI cards:**
+
+| KPI | Value |
+|---|---|
+| Total Revenue | $10,024.24 |
+| Total Sales | 44 |
+| Best Customer | Lucas Nunes *(spent $1,316.95)* |
+| Best-Selling Product | Bluetooth Headphones *(19 units sold)* |
+
+**Revenue by Category:**
+
+| Category | Total Revenue |
+|---|---|
+| Electronics | $4,456.50 |
+| Clothing | $2,734.64 |
+| Home & Kitchen | $1,582.10 |
+| Sports | $1,251.00 |
+
+**Revenue by City** (top 5 of 10):
+
+| City | Total Revenue |
+|---|---|
+| Chicago | $2,421.75 |
+| Austin | $1,192.35 |
+| Miami | $1,151.76 |
+| Denver | $1,146.20 |
+| Houston | $1,039.99 |
+
+**Detailed Sales table** (44 rows, newest first — first few shown):
+
+| Sale ID | Date | Customer | Product | Category | Qty | Unit Price | Total |
+|---|---|---|---|---|---|---|---|
+| 39 | 2026-07-13 | Gabriela Lima | Cotton T-Shirt | Clothing | 4 | $24.99 | $99.96 |
+| 7 | 2026-07-12 | Hugo Ferreira | Tennis Racket | Sports | 3 | $99.90 | $299.70 |
+| 36 | 2026-07-11 | Isabela Ramos | Winter Jacket | Clothing | 5 | $149.99 | $749.95 |
+
+Clicking **Export to Excel** or **Export to PDF** turns this same data into
+a downloadable `sales_report.xlsx` or `sales_report.pdf`.
+
 ## A Note on Dependency Versions
 
 `requirements.txt` pins `pandas` to the 2.x series and `pyarrow` to
