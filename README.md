@@ -5,9 +5,6 @@ filter it by date, city, and product category, and generates KPIs, charts,
 and downloadable Excel/PDF reports. Built with **Python**, **SQLite**, and
 **Streamlit**.
 
-This project was built as a learning exercise. It's meant to be simple to
-read and easy to extend, not a production system.
-
 ## Features
 
 - Filter sales by date range, city, and product category
